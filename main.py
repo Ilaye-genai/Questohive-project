@@ -10,7 +10,7 @@ from langchain_openai import ChatOpenAI
 from langchain.agents import create_agent
 from prompt import SUPERVISOR_PROMPT, SYSTEM_PROMPT_PQ, SYSTEM_PROMPT_SUPPORT
 from langchain.agents.middleware import SummarizationMiddleware
-from app import database
+from mcp_clients import database
 from web_scraper import web_crawler
 from langgraph.checkpoint.memory import InMemorySaver
 load_dotenv()
